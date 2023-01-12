@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d358de9-2c9d-4ce4-a5cf-0fb6105cdcb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskA/Ex2_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskA/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskA/runnableFilesReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskA_Tests/Tests_Ex2_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskA_Tests/Tests_runnableFilesReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskB/CustomExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskB/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskB/TaskC2R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskB/TaskType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/TestsPartB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskB_Tests/TestsPartB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/TestsPartB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +27,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="2KF9Momv54IZ8cHme64Fhgtod9g" />
@@ -54,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/shora/Documents/Semester A/OOP - Elizabeth/OOP_Ex2_v3/src/main/java/TaskB",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shora/Documents/Semester A/OOP - Elizabeth/OOP_Ex2_v3/src/main/java/TaskB&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shora\Documents\Semester A\OOP - Elizabeth\OOP_Ex2_v3\src\main\java\TaskB" />
@@ -78,7 +63,7 @@
       <recent name="TaskB_Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MoreTests">
+  <component name="RunManager" selected="JUnit.Tests_Ex2_1">
     <configuration name="MoreTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_Ex2_v3" />
       <extension name="coverage">
@@ -125,11 +110,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests_Ex2_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex2_v3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TaskA_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TaskA_Tests" />
+      <option name="MAIN_CLASS_NAME" value="TaskA_Tests.Tests_Ex2_1" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests_Ex2_1" />
+        <item itemvalue="JUnit.TestsPartB" />
         <item itemvalue="JUnit.MoreTests" />
         <item itemvalue="JUnit.MoreTests.partialTest" />
-        <item itemvalue="JUnit.TestsPartB" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673559421324</updated>
       <workItem from="1673559422702" duration="1654000" />
+      <workItem from="1673564052559" duration="1866000" />
     </task>
     <servers />
   </component>
