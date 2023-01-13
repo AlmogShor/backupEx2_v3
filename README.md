@@ -16,11 +16,11 @@ In this project we worked with threads.
 
 
 ## Threed
-Threads allows a program to operate more efficiently by doing multiple things at the same time.
+>Threads allows a program to operate more efficiently by doing multiple things at the same time.
 Threads can be used to perform complicated tasks in the background without interrupting the main program.
 
 ## ThreedPool
-Java Thread pool represents a group of worker threads that are waiting for the job and reused many times.
+>Java Thread pool represents a group of worker threads that are waiting for the job and reused many times.
 In the case of a thread pool, a group of fixed-size threads is created. 
 A thread from the thread pool is pulled out and assigned a job by the service provider. 
 After completion of the job, the thread is contained in the thread pool again.
@@ -95,17 +95,22 @@ Each task has a priority used for scheduling, inferred from the integer value of
 the section 1 to a priority queue, and a method for submitting a generic task created by a
 Callable<V> and a Type, passed as arguments.
 
+## The Chalanges
+1. Returning value operation - in this case we must use Callable interface - but the thread pool works with FutureTask and Runnable.
+2. Use Priority Queue in our customExecutor but the FutureTask interface are not comparable.
+3. Return the maximum priority in the queue in O(1) time & space complexity when this method may not access the queue to query the current maximum priority.
 
 
 ## Main Classes
 - [x] **Task** 
- > Represents a task with a TaskType and may return a value of some type 
+  > Represents a task with a TaskType and may return a value of some type.
     - **Task** -  takes the callable task, convert it to Future task and execute it to the thread pool.
     - **createTask** - Factory method - Published method to create a task for safe creation.
     - **createTask** - Published task creation in case the type is other - not defined.
     - **equals** - Compares between two tasks.
     - **hashCode** - Hash performance of task.
    
+    
 - [x] **CustomExecutor**
   > An Executor that asynchronously computes Task instances. 
     - **submit** -  takes the callable task, convert it to Future task and execute it to the thread pool.
