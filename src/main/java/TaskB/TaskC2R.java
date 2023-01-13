@@ -10,6 +10,9 @@ public class TaskC2R<T> extends FutureTask implements Comparable<TaskC2R<T>> {
         super(task);
         this.task = task;
     }
+    public TaskType getType() {
+        return task.getType();
+    }
 
     /**
      * Compares the priority of current task and one another.

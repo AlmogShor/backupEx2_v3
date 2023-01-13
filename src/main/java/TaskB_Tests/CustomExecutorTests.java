@@ -1,5 +1,6 @@
 package TaskB_Tests;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.platform.commons.logging.Logger;
 import org.junit.platform.commons.logging.LoggerFactory;
@@ -12,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CustomExecutorTests<V> {
     public static final Logger logger = LoggerFactory.getLogger(CustomExecutorTests.class);
+    public static CustomExecutor customExecutor = new CustomExecutor();
 
 //    @Test
 //    public void partialTest(){
@@ -61,10 +63,28 @@ class CustomExecutorTests<V> {
 //                customExecutor.getCurrentMax());
 //        customExecutor.gracefullyTerminate();
 //    }
+    @BeforeAll
+    public static void setup(){
+        System.out.println("Setup");
+        System.out.println(customExecutor.priQueue);
+    }
 
     @Test
-    public void TestOfCustomExceutor(){
-        CustomExecutor customExecutor = new CustomExecutor();
+    public void testOfSubmit(){
+        Task<Integer> tst = Task.createTask(() -> { return 2*2*2;}, TaskType.COMPUTATIONAL);
+        Future<Integer> future = customExecutor.submit(tst);
+
+        try {
+            assertEquals(future.get(), 8);
+            assertEquals(customExecutor.getCurrentMax(), tst.getType().getPriorityValue());
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+
+    }
+    @Test
+    public void Test_General(){
+
 
         Callable<String> tst = () ->
         {
@@ -127,7 +147,6 @@ class CustomExecutorTests<V> {
     }
     @Test
     public void anotherTests() throws ExecutionException, InterruptedException {
-        CustomExecutor customExecutor = new CustomExecutor();
 
         Task<String> taskString = Task.createTask(()->{
             StringBuilder test = new StringBuilder("Hello ");
