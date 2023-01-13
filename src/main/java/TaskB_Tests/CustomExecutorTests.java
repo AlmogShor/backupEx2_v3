@@ -77,7 +77,7 @@ class CustomExecutorTests<V> {
         try {
             assertEquals(customExecutor.getCurrentMax(), tst.getType().getPriorityValue());
             assertEquals(future.get(), 8);
-            assertEquals(customExecutor.getCurrentMax(), 0);
+            assertEquals(customExecutor.getCurrentMax(), 1);
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }

@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d358de9-2c9d-4ce4-a5cf-0fb6105cdcb3" name="Changes" comment="fix bugs">
+      <change afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/TaskTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/shaharTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TaskB/CustomExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB/CustomExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TaskB_Tests/CustomExecutorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/CustomExecutorTests.java" afterDir="false" />
@@ -40,19 +42,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/shora/Documents/Semester A/OOP - Elizabeth/OOP_Ex2_v3/src/main/java/TaskB",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shora/Documents/Semester A/OOP - Elizabeth/OOP_Ex2_v3/src/main/java/TaskB&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shora\Documents\Semester A\OOP - Elizabeth\OOP_Ex2_v3\src\main\java\TaskB" />
@@ -66,7 +68,7 @@
       <recent name="TaskB_Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomExecutorTests.testOfSubmit">
+  <component name="RunManager" selected="JUnit.shaharTests">
     <configuration name="CustomExecutorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_Ex2_v3" />
       <extension name="coverage">
@@ -82,7 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomExecutorTests.TestOfCustomExceutor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_Ex2_v3" />
       <extension name="coverage">
         <pattern>
@@ -91,66 +93,65 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TaskB_Tests" />
-      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.CustomExecutorTests" />
-      <option name="METHOD_NAME" value="TestOfCustomExceutor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomExecutorTests.testOfSubmit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OOP_Ex2_v3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TaskB_Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TaskB_Tests" />
-      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.CustomExecutorTests" />
-      <option name="METHOD_NAME" value="testOfSubmit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LecturerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OOP_Ex2_v3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TaskB_Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TaskB_Tests" />
-      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.LecturerTests" />
+      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.TaskTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests_runnableFilesReader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="shacharTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_Ex2_v3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TaskA_Tests.*" />
+          <option name="PATTERN" value="TaskB_Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TaskA_Tests" />
-      <option name="MAIN_CLASS_NAME" value="TaskA_Tests.Tests_runnableFilesReader" />
+      <option name="PACKAGE_NAME" value="TaskB_Tests" />
+      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.shacharTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="shaharTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex2_v3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TaskB_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TaskB_Tests" />
+      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.shaharTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="shaharTests.testCustomExecutor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex2_v3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TaskB_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TaskB_Tests" />
+      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.shaharTests" />
+      <option name="METHOD_NAME" value="testCustomExecutor" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomExecutorTests.testOfSubmit" />
+        <item itemvalue="JUnit.shaharTests" />
+        <item itemvalue="JUnit.shaharTests.testCustomExecutor" />
         <item itemvalue="JUnit.CustomExecutorTests" />
-        <item itemvalue="JUnit.CustomExecutorTests.TestOfCustomExceutor" />
-        <item itemvalue="JUnit.LecturerTests" />
-        <item itemvalue="JUnit.Tests_runnableFilesReader" />
+        <item itemvalue="JUnit.TaskTests" />
+        <item itemvalue="JUnit.shacharTests" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +164,8 @@
       <option name="presentableId" value="Default" />
       <updated>1673559421324</updated>
       <workItem from="1673559422702" duration="1654000" />
-      <workItem from="1673564052559" duration="7411000" />
+      <workItem from="1673564052559" duration="7674000" />
+      <workItem from="1673611371912" duration="2154000" />
     </task>
     <task id="LOCAL-00001" summary="Add UML and adding tests">
       <created>1673566082650</created>
@@ -186,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673571467285</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix bugs">
+      <created>1673571938557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673571938557</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,5 +217,16 @@
     <MESSAGE value="two new tests" />
     <MESSAGE value="fix bugs" />
     <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TaskB_Tests/shaharTests.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

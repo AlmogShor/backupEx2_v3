@@ -53,11 +53,7 @@ public class CustomExecutor extends ThreadPoolExecutor {
      * @return current maximum priority value.
      */
     public int getCurrentMax() {
-        for (int i = 0; i < 10; i++) {
-            if (this.priQueue[i] > 0) {
-                return i + 1;
-            }
-        }
+        this.setPriQueue();
         return this.currentMax;
     }
 
@@ -84,10 +80,21 @@ public class CustomExecutor extends ThreadPoolExecutor {
     @Override
     protected void beforeExecute(Thread t, Runnable r) {
 
-        this.priQueue[((TaskC2R) r).getType().getPriorityValue() - 1]--;
         super.beforeExecute(t, r);
+        this.setPriQueue();
+
     }
 
+    private synchronized void setPriQueue(){
+       boolean flg = true;
+        for (int i = 0; i < this.priQueue.length && flg; i++) {
+            if(this.priQueue[i]> 0){
+                this.currentMax = i;
+                flg = false;
+                this.priQueue[i]--;
+            }
+        }
+    }
     /**
      * Option to stop the CustomExecutor as follows:
      * Stops accepting new tasks
