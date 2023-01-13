@@ -75,13 +75,14 @@ class CustomExecutorTests<V> {
         Future<Integer> future = customExecutor.submit(tst);
 
         try {
-            assertEquals(future.get(), 8);
             assertEquals(customExecutor.getCurrentMax(), tst.getType().getPriorityValue());
+            assertEquals(future.get(), 8);
+            assertEquals(customExecutor.getCurrentMax(), 0);
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
-
     }
+
     @Test
     public void Test_General(){
 

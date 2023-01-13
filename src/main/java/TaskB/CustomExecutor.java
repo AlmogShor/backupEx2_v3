@@ -28,6 +28,10 @@ public class CustomExecutor extends ThreadPoolExecutor {
                 300,
                 TimeUnit.MILLISECONDS
                 , new PriorityBlockingQueue<>());
+        for (int i = 0; i < this.priQueue.length; i++) {
+            this.priQueue[i] = 0;
+        }
+
     }
 
     /**
@@ -49,8 +53,14 @@ public class CustomExecutor extends ThreadPoolExecutor {
      * @return current maximum priority value.
      */
     public int getCurrentMax() {
-        return currentMax;
+        for (int i = 0; i < 10; i++) {
+            if (this.priQueue[i] > 0) {
+                return i + 1;
+            }
+        }
+        return this.currentMax;
     }
+
 
     /**
      * @param task - task to do
@@ -74,7 +84,7 @@ public class CustomExecutor extends ThreadPoolExecutor {
     @Override
     protected void beforeExecute(Thread t, Runnable r) {
 
-        this.priQueue[((TaskC2R)r).getType().getPriorityValue() - 1]--;
+        this.priQueue[((TaskC2R) r).getType().getPriorityValue() - 1]--;
         super.beforeExecute(t, r);
     }
 

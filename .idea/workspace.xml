@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d358de9-2c9d-4ce4-a5cf-0fb6105cdcb3" name="Changes" comment="two new tests">
+    <list default="true" id="0d358de9-2c9d-4ce4-a5cf-0fb6105cdcb3" name="Changes" comment="fix bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TaskB/CustomExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB/CustomExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TaskB/TaskC2R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB/TaskC2R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TaskB_Tests/CustomExecutorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/CustomExecutorTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673559421324</updated>
       <workItem from="1673559422702" duration="1654000" />
-      <workItem from="1673564052559" duration="6911000" />
+      <workItem from="1673564052559" duration="7411000" />
     </task>
     <task id="LOCAL-00001" summary="Add UML and adding tests">
       <created>1673566082650</created>
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673568796780</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix bugs">
+      <created>1673571467285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673571467285</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +206,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add UML and adding tests" />
     <MESSAGE value="two new tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="two new tests" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
 </project>
