@@ -126,7 +126,7 @@ Callable<V> and a Type, passed as arguments.
 
 ## UML diagram for Part 2
    
-![תמונה של WhatsApp‏ 2023-01-13 בשעה 01 26 53](https://user-images.githubusercontent.com/92925727/212203776-2c6d33bc-a932-4be9-8606-e138a3bc5622.jpg) { width: 200px; }
+![תמונה של WhatsApp‏ 2023-01-13 בשעה 01 26![תמונה של WhatsApp‏ 2023-01-13 בשעה 01 26 53](https://user-images.githubusercontent.com/92925727/212213086-395438a4-99a4-42fe-94cb-70f4dbeb70ea.jpg)53](https://user-images.githubusercontent.com/92925727/212203776-2c6d33bc-a932-4be9-8606-e138a3bc5622.jpg) 
 
 
 
