@@ -10,7 +10,8 @@ Download the whole project and export it by the above actions:
 Click Code (Green Button) -> Click Download ZIP -> Choose Extract to Folder in Zip 
 ```
 
-## This is our third project in the OOP course.
+## Introduction
+This is our third project in the OOP course.
 In this project we worked with threads.
 
 
@@ -49,11 +50,13 @@ This is the performance in milliseconds for the three methods
 ![תמונה של WhatsApp‏ 2023-01-13 בשעה 01 26 52](https://user-images.githubusercontent.com/92925727/212204006-70a76557-ea24-4179-a953-a45f2cdd64a2.jpg)
 
 
-
-
-
 # Part 2
-
+In this part we were asked to create two new types that extend the functionality of Java's Concurrency Framework:
+A generic task with a Type that returns a result and may throw an exception.
+Each task has a priority used for scheduling􀍕 inferred from the integer value of the task􀍛s Type.
+2. A custom thread pool class that defines a method for submitting a generic task as described in
+the section 1 to a priority queue, and a method for submitting a generic task created by a
+Callable<V> and a Type, passed as arguments.
 
 
 
