@@ -93,7 +93,7 @@ Callable<V> and a Type, passed as arguments.
     - **submit** - execute task without type definition.
     - **submit** - execute task with type definition.
     - **gracefullyTerminate** - Option to stop the CustomExecutor. Stops accepting new tasks, waits for already submitted tasks to complete even if they didn't start yet and Complete all tasks that are in the queue.
-    - **beforeExecute** - 
+    - **beforeExecute** - allows to get information about task that is next to get a thread. In our case allows us to check the current max priority.
     
 
 - [x] **TaskType** (supplied ready to use)
