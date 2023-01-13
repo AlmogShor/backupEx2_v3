@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d358de9-2c9d-4ce4-a5cf-0fb6105cdcb3" name="Changes" comment="fix bugs">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/TaskTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/shaharTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TaskB/CustomExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB/CustomExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TaskB_Tests/CustomExecutorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/CustomExecutorTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,7 @@
       <recent name="TaskB_Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.shaharTests">
+  <component name="RunManager" selected="JUnit.CustomExecutorTests">
     <configuration name="CustomExecutorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_Ex2_v3" />
       <extension name="coverage">
@@ -147,9 +144,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomExecutorTests" />
         <item itemvalue="JUnit.shaharTests" />
         <item itemvalue="JUnit.shaharTests.testCustomExecutor" />
-        <item itemvalue="JUnit.CustomExecutorTests" />
         <item itemvalue="JUnit.TaskTests" />
         <item itemvalue="JUnit.shacharTests" />
       </list>
@@ -165,7 +162,7 @@
       <updated>1673559421324</updated>
       <workItem from="1673559422702" duration="1654000" />
       <workItem from="1673564052559" duration="7674000" />
-      <workItem from="1673611371912" duration="2154000" />
+      <workItem from="1673611371912" duration="2374000" />
     </task>
     <task id="LOCAL-00001" summary="Add UML and adding tests">
       <created>1673566082650</created>
@@ -195,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673571938557</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix bugs">
+      <created>1673613831543</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673613831543</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
