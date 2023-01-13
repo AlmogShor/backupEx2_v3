@@ -54,41 +54,15 @@ This is the performance in milliseconds for the three methods
 
 # Part 2
 ## BackGround
-> PRIORITY-BASED TASK SCHEDULING
->>The Java Virtual machine (JVM) schedules threads using a preemptive, priority-based policy.
-Every thread has a priority - Threads with higher priority are executed in preference to threads with
-lower priority. When code running in a thread creates a new Thread object, the new thread has its
-initial priority set automatically equal to the priority of the creating thread.
-If a thread was created using a different ThreadGroup, the priority of the newly created thread is the
-smaller of priority of the thread creating it and the maximum permitted priority of the thread group.
-If a thread with a higher priority than the currently running thread enters the RUNNABLE state, the
-scheduler preempts the executing thread schedules the thread with the higher priority to run.
-The Scheduler may also invoke a different thread to run if the currently running thread changes state
-from RUNNABLE to a different state such as BLOCKED, WAITING or TERMINATED.
-A user may set the priority of a thread using the method: public final void setPriority(int newPriority).
-The setPriority method changes the priority of a thread. For platform threads, the priority is set to the
-smaller of the specified newPriority and the maximum permitted priority of the thread group.
-If a thread with a higher priority than the currently running thread enters the RUNNABLE state, the
-scheduler preempts the executing thread schedules the thread with the higher priority to run.
-The Scheduler may also invoke a different thread to run if the currently running thread changes state
-from RUNNABLE to a different state such as BLOCKED, WAITING or TERMINATED.
-A user may set the priority of a thread using the method: public final void setPriority(int newPriority).
-The setPriority method changes the priority of a thread. For platform threads, the priority is set to the
-smaller of the specified newPriority and the maximum permitted priority of the thread group.
+> In Java, there is no built-in option to give priority to an asynchronous task (a task that will be executed in a separate thread). The language does allow you to set a priority for the Thread that runs the task, but not for the task itself.
 
->BUILT-IN LIMITATIONS
->>Java enables developers to set the priority of a thread, but not the Runnable operation it executes.
-Tightly coupling the operation with the execution path that runs it creates major drawback when
-using an executor such as a ThreadPoolExecutor: the collection of threads in an executor is defined by
-a ThreadFactory. By default, it creates all threads with the same priority and non-daemon status.
-Moreover, if we wish to execute a returning value operation, for example using the Callable<V>
-interface, there are no constructors in the Thread class that get a Callable<V> as parameter and we
-ought to use an Executor of some type, such as a ThreadPoolExecutor.
+
 
 
 
 ## The mission
-In this part we were asked to create two new types that extend the functionality of Java's Concurrency Framework:
+Create a new type that represents an asynchronous task with priority and a new ThreadPool type that supports owning tasks
+priority.
 1. A generic task with a Type that returns a result and may throw an exception.
 Each task has a priority used for scheduling, inferred from the integer value of the task's Type.
 2. A custom thread pool class that defines a method for submitting a generic task as described in
@@ -96,14 +70,16 @@ the section 1 to a priority queue, and a method for submitting a generic task cr
 Callable<V> and a Type, passed as arguments.
 
 ## The Chalanges
-1. Returning value operation - in this case we must use Callable interface - but the thread pool works with FutureTask and Runnable.
-2. Use Priority Queue in our customExecutor but the FutureTask interface are not comparable.
-3. Return the maximum priority in the queue in O(1) time & space complexity when this method may not access the queue to query the current maximum priority.
+1. Returning value operation - in this case we must use Callable interface - but the thread pool works with FutureTask and Runnable - the solutin explained in Design Patterns.
+2. Use Priority Queue in our customExecutor but the FutureTask interface are not comparable - the solutin explained in Design Patterns - the solutin explained in Design Patterns.
+3. Return the maximum priority in the queue in O(1) time & space complexity when this method may not access the queue to query the current maximum priority - we created "shadow" array that holds the number of task from each priotiry. When we submiting the task we קnter his priority in the specific cell in the array and before execute we count it down.
+
 
 
 ## Main Classes
 - [x] **Task** 
-  > Represents a task with a TaskType and may return a value of some type.
+  > Represents an operation that can be run asynchronously and can return a value of some type.
+  It is not necessary for the operation to succeed and in case of failure, an exception will be thrown.
     - **Task** -  takes the callable task, convert it to Future task and execute it to the thread pool.
     - **createTask** - Factory method - Published method to create a task for safe creation.
     - **createTask** - Published task creation in case the type is other - not defined.
@@ -112,17 +88,22 @@ Callable<V> and a Type, passed as arguments.
    
     
 - [x] **CustomExecutor**
-  > An Executor that asynchronously computes Task instances. 
-    - **submit** -  takes the callable task, convert it to Future task and execute it to the thread pool.
-    - **submit** - without type definition.
-    - **submit** - methods to register  observers.
-    - **gracefullyTerminate** - methods to unregister observers.
-    - **Insert** - Inserts the string into this character sequence.
-    - **Append** - Appends the specified string to this character sequence.
-    - **Delete** - Removes the characters in a substring of this sequence.
-    - **Undo** - Erases the last change done to the document, reverting it to an older state.
+  > Represents a new type of ThreadPool that supports a queue of priority tasks. CustomExecutor create a Task before putting it in the queue by passing Callable<V> and enum of type TaskType. CustomExecutor will execute the tasks according to their priorit. The threadpool size depends on a number of available processors. 
+    - **submit** - takes the callable task, convert it to Future task and execute it to the thread pool.
+    - **submit** - execute task without type definition.
+    - **submit** - execute task with type definition.
+    - **gracefullyTerminate** - Option to stop the CustomExecutor. Stops accepting new tasks, waits for already submitted tasks to complete even if they didn't start yet and Complete all tasks that are in the queue.
+    - **beforeExecute** - 
+    
 
-
+- [x] **TaskType** (supplied ready to use)
+  > Is an enum that describes the type of task (computational/IO/Other access/unknown) and its priority based on the value number of the task type.
+  
+## Design Patterns
+In this assignment we used quite a few design patterns.
+  
+***Factiry*** - In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface. We used that pattern to make the task creation safely.
+***Addapter*** - Adapter pattern works as a bridge between two incompatible interfaces. The adapter pattern convert the interface of a class into another interface clients expect. In our project we created new class that implements FutureTask and Runnble. When we submiting the task (Task callable type) to our CustomExecutor we change it to new adapted class.
 
 ## UML diagram for Part 2
    
