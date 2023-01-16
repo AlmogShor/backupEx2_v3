@@ -27,7 +27,7 @@ public class CustomExecutor extends ThreadPoolExecutor {
                 Runtime.getRuntime().availableProcessors() - 1,
                 300,
                 TimeUnit.MILLISECONDS
-                , new PriorityBlockingQueue<>());
+                , new PriorityBlockingQueue<>(10, new comprtrEx2BlockingQueue()));
         for (int i = 0; i < this.priQueue.length; i++) {
             this.priQueue[i] = 0;
         }
@@ -43,7 +43,6 @@ public class CustomExecutor extends ThreadPoolExecutor {
      * @return Executes the task
      */
     public <T> Future<T> submit(Task<T> task) {
-        ++priQueue[task.getType().getPriorityValue() - 1];
         TaskC2R adaptedTask = new TaskC2R(task);
         super.execute(adaptedTask);
         return adaptedTask;
@@ -53,7 +52,6 @@ public class CustomExecutor extends ThreadPoolExecutor {
      * @return current maximum priority value.
      */
     public int getCurrentMax() {
-        this.setPriQueue();
         return this.currentMax;
     }
 
@@ -68,7 +66,7 @@ public class CustomExecutor extends ThreadPoolExecutor {
     }
 
     /**
-     * @param task - task to do
+     * @param task - task to execute
      * @param type of the task
      * @param <T>  - Generic task return value type
      * @return Submitting of the task while creating.
@@ -81,19 +79,15 @@ public class CustomExecutor extends ThreadPoolExecutor {
     protected void beforeExecute(Thread t, Runnable r) {
 
         super.beforeExecute(t, r);
-        this.setPriQueue();
+        this.helperOfCurrentMax(r);
 
     }
 
-    private synchronized void setPriQueue(){
-       boolean flg = true;
-        for (int i = 0; i < this.priQueue.length && flg; i++) {
-            if(this.priQueue[i]> 0){
-                this.currentMax = i;
-                flg = false;
-                this.priQueue[i]--;
-            }
-        }
+    private synchronized void helperOfCurrentMax(Runnable r){
+        TaskC2R<?> currTask = (TaskC2R<?>) r;
+        if (currTask.getPriority() > this.currentMax)
+            this.currentMax = currTask.getPriority();
+
     }
     /**
      * Option to stop the CustomExecutor as follows:

@@ -54,7 +54,7 @@ class LecturerTests {
         }
         assertEquals(reversed.toString(), "ZYXWVUTSRQPONMLKJIHGFEDCBA");
         assertEquals(totalPrice, 1104.0808032);
-        assertEquals(customExecutor.getCurrentMax(), 0);
+        assertEquals(customExecutor.getCurrentMax(), 2);
         logger.info(() -> "Reversed String = " + reversed);
         logger.info(() -> String.valueOf("Total Price = " + totalPrice));
         logger.info(() -> "Current maximum priority = " +

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d358de9-2c9d-4ce4-a5cf-0fb6105cdcb3" name="Changes" comment="fix bugs">
+    <list default="true" id="0d358de9-2c9d-4ce4-a5cf-0fb6105cdcb3" name="Changes" comment="final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskB/CustomExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB/CustomExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskB/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskB/TaskC2R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB/TaskC2R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TaskB_Tests/CustomExecutorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/CustomExecutorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskB_Tests/LecturerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskB_Tests/LecturerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +85,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomExecutorTests.anotherTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex2_v3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TaskB_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TaskB_Tests" />
+      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.CustomExecutorTests" />
+      <option name="METHOD_NAME" value="anotherTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomExecutorTests.testOfSubmit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex2_v3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TaskB_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TaskB_Tests" />
+      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.CustomExecutorTests" />
+      <option name="METHOD_NAME" value="testOfSubmit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LecturerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex2_v3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TaskB_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TaskB_Tests" />
+      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.LecturerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TaskTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_Ex2_v3" />
       <extension name="coverage">
@@ -96,59 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="shacharTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OOP_Ex2_v3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TaskB_Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TaskB_Tests" />
-      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.shacharTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shaharTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OOP_Ex2_v3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TaskB_Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TaskB_Tests" />
-      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.shaharTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shaharTests.testCustomExecutor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OOP_Ex2_v3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TaskB_Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TaskB_Tests" />
-      <option name="MAIN_CLASS_NAME" value="TaskB_Tests.shaharTests" />
-      <option name="METHOD_NAME" value="testCustomExecutor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CustomExecutorTests" />
-        <item itemvalue="JUnit.shaharTests" />
-        <item itemvalue="JUnit.shaharTests.testCustomExecutor" />
+        <item itemvalue="JUnit.LecturerTests" />
         <item itemvalue="JUnit.TaskTests" />
-        <item itemvalue="JUnit.shacharTests" />
+        <item itemvalue="JUnit.CustomExecutorTests.anotherTests" />
+        <item itemvalue="JUnit.CustomExecutorTests.testOfSubmit" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +167,8 @@
       <updated>1673559421324</updated>
       <workItem from="1673559422702" duration="1654000" />
       <workItem from="1673564052559" duration="7674000" />
-      <workItem from="1673611371912" duration="2374000" />
+      <workItem from="1673611371912" duration="3152000" />
+      <workItem from="1673819163161" duration="8699000" />
     </task>
     <task id="LOCAL-00001" summary="Add UML and adding tests">
       <created>1673566082650</created>
@@ -199,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673613831543</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="final">
+      <created>1673614186477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673614186477</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,17 +233,7 @@
     <MESSAGE value="Add UML and adding tests" />
     <MESSAGE value="two new tests" />
     <MESSAGE value="fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/TaskB_Tests/shaharTests.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
 </project>

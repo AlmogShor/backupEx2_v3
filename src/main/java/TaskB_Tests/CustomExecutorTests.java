@@ -1,5 +1,6 @@
 package TaskB_Tests;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.platform.commons.logging.Logger;
@@ -66,7 +67,6 @@ class CustomExecutorTests<V> {
     @BeforeAll
     public static void setup(){
         System.out.println("Setup");
-        System.out.println(customExecutor.priQueue);
     }
 
     @Test
@@ -75,9 +75,9 @@ class CustomExecutorTests<V> {
         Future<Integer> future = customExecutor.submit(tst);
 
         try {
-//            assertEquals(customExecutor.getCurrentMax(), tst.getType().getPriorityValue());
-//            assertEquals(future.get(), 8);
-//            assertEquals(customExecutor.getCurrentMax(), 0);
+
+            assertEquals(future.get(), 8);
+            assertEquals(customExecutor.getCurrentMax(), 2);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -184,7 +184,12 @@ class CustomExecutorTests<V> {
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
+        assertEquals(2, customExecutor.getCurrentMax());
 
+    }
 
+    @AfterAll
+    public static void tearDown(){
+        System.out.println("Tear Down");
     }
 }

@@ -85,7 +85,8 @@ public class Task<T> implements Callable<T> {
     }
 
 
-
-
+    public boolean isNull() {
+        return this == null;
+    }
 }
 

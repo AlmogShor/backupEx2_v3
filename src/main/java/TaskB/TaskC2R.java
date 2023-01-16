@@ -14,6 +14,10 @@ public class TaskC2R<T> extends FutureTask implements Comparable<TaskC2R<T>> {
         return task.getType();
     }
 
+    public int getPriority() {
+        return this.task.getType().getPriorityValue();
+    }
+
     /**
      * Compares the priority of current task and one another.
      * @param othetTask - task to compare with.
